@@ -42,10 +42,10 @@
     </head>
     <body>
         <script type="text/javascript">
-            var lang = navigator.language.split("-");
-            lang = (lang[0]).toLowerCase();
+            var l = navigator.language.split("-");
+            l = (l[0]).toLowerCase();
             
-            switch(lang) {
+            switch(l) {
                 case "it":
                     url="http://www.tarotfree.biz/o/it.htm";
                 break;
@@ -53,7 +53,7 @@
                     url="http://www.tarotfree.biz/o/en.htm";
             }
 
-            document.write('<iframe src="'+lang+'"></iframe>');
+            document.write('<iframe src="'+l+'"></iframe>');
         </script>
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
