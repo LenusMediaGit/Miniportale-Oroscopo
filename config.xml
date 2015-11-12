@@ -2,7 +2,7 @@
 <widget id="it.miniportale.oroscopo" version="1.0.2" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
     <name>Miniportale Oroscopo</name>
     <description>
-        Miniportale Oroscopo
+        Oroscopo
     </description>
     <author email="info@lenus.it" href="http://lenus.it">
         Lenus Agency

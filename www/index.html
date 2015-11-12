@@ -7,7 +7,7 @@
         <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
         <!--<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height" />-->
         <link rel="stylesheet" type="text/css" href="css/index.css" />
-        <title>Miniportale Oroscopo</title>
+        <title>Oroscopo</title>
 
         <style type="text/css">
             body, html
@@ -41,7 +41,20 @@
         </style>
     </head>
     <body>
-        <iframe src="http://www.miniportale.it/mm/o/"></iframe>
+        <script type="text/javascript">
+            var lang = navigator.language.split("-");
+            lang = (lang[0]).toLowerCase();
+            
+            switch(lang) {
+                case "it":
+                    url="http://www.tarotfree.biz/o/it.htm";
+                break;
+                default:
+                    url="http://www.tarotfree.biz/o/en.htm";
+            }
+
+            document.write('<iframe src="'+lang+'"></iframe>');
+        </script>
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
         <script>
